@@ -40,7 +40,7 @@
 // location is highlighted in red and hover text provides the compiler
 // error message.
 //
-package analysis // import "golang.org/x/tools/godoc/analysis"
+package analysis // import "github.com/Go-zh/tools/godoc/analysis"
 
 import (
 	"fmt"
@@ -57,10 +57,10 @@ import (
 	"strings"
 	"sync"
 
-	"golang.org/x/tools/go/loader"
-	"golang.org/x/tools/go/pointer"
-	"golang.org/x/tools/go/ssa"
-	"golang.org/x/tools/go/ssa/ssautil"
+	"github.com/Go-zh/tools/go/loader"
+	"github.com/Go-zh/tools/go/pointer"
+	"github.com/Go-zh/tools/go/ssa"
+	"github.com/Go-zh/tools/go/ssa/ssautil"
 )
 
 // -- links ------------------------------------------------------------
@@ -362,7 +362,7 @@ func Run(pta bool, result *Result) {
 	}
 
 	// Uncomment to make startup quicker during debugging.
-	//args = []string{"golang.org/x/tools/cmd/godoc"}
+	//args = []string{"github.com/Go-zh/tools/cmd/godoc"}
 	//args = []string{"fmt"}
 
 	if _, err := conf.FromArgs(args, true); err != nil {

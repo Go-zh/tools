@@ -56,7 +56,7 @@
 // where t is the lower-cased name of the first type listed. It can be overridden
 // with the -output flag.
 //
-package main // import "golang.org/x/tools/cmd/stringer"
+package main // import "github.com/Go-zh/tools/cmd/stringer"
 
 import (
 	"bytes"
@@ -74,7 +74,7 @@ import (
 	"sort"
 	"strings"
 
-	"golang.org/x/tools/go/packages"
+	"github.com/Go-zh/tools/go/packages"
 )
 
 var (

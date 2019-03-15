@@ -18,7 +18,7 @@
 // Go 1.8 export data files, so they will work before and after the
 // Go update. (See discussion at https://golang.org/issue/15651.)
 //
-package gcexportdata // import "golang.org/x/tools/go/gcexportdata"
+package gcexportdata // import "github.com/Go-zh/tools/go/gcexportdata"
 
 import (
 	"bufio"
@@ -29,7 +29,7 @@ import (
 	"io"
 	"io/ioutil"
 
-	"golang.org/x/tools/go/internal/gcimporter"
+	"github.com/Go-zh/tools/go/internal/gcimporter"
 )
 
 // Find returns the name of an object (.o) or archive (.a) file

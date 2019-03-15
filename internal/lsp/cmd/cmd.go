@@ -15,8 +15,8 @@ import (
 	"go/parser"
 	"go/token"
 
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/internal/tool"
+	"github.com/Go-zh/tools/go/packages"
+	"github.com/Go-zh/tools/internal/tool"
 )
 
 // Application is the main application as passed to tool.Main

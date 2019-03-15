@@ -8,7 +8,7 @@ package protocol
 
 import (
 	"go/token"
-	"golang.org/x/tools/internal/span"
+	"github.com/Go-zh/tools/internal/span"
 )
 
 type ColumnMapper struct {

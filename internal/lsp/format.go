@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	"golang.org/x/tools/internal/lsp/protocol"
-	"golang.org/x/tools/internal/lsp/source"
-	"golang.org/x/tools/internal/span"
+	"github.com/Go-zh/tools/internal/lsp/protocol"
+	"github.com/Go-zh/tools/internal/lsp/source"
+	"github.com/Go-zh/tools/internal/span"
 )
 
 // formatRange formats a document with a given range.

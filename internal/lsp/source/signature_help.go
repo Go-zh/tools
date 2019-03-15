@@ -11,7 +11,7 @@ import (
 	"go/token"
 	"go/types"
 
-	"golang.org/x/tools/go/ast/astutil"
+	"github.com/Go-zh/tools/go/ast/astutil"
 )
 
 type SignatureInformation struct {

@@ -1,7 +1,7 @@
 # godoc
 
 This directory contains most of the code for running a godoc server. The
-executable lives at golang.org/x/tools/cmd/godoc.
+executable lives at github.com/Go-zh/tools/cmd/godoc.
 
 ## Development mode
 
@@ -10,7 +10,7 @@ binary. It can be tedious to recompile assets every time, but you can pass a
 flag to load CSS/JS/templates from disk every time a page loads:
 
 ```
-godoc -templates=$GOPATH/src/golang.org/x/tools/godoc/static -http=:6060
+godoc -templates=$GOPATH/src/github.com/Go-zh/tools/godoc/static -http=:6060
 ```
 
 ## Recompiling static assets
@@ -21,10 +21,10 @@ present in the final binary. They are placed into `static/static.go` by running
 
 1) Make changes to e.g. `static/style.css`.
 
-2) Run `go generate golang.org/x/tools/godoc/static` so `static/static.go` picks
+2) Run `go generate github.com/Go-zh/tools/godoc/static` so `static/static.go` picks
 up the change.
 
-3) Run `go install golang.org/x/tools/cmd/godoc` so the compiled `godoc` binary
+3) Run `go install github.com/Go-zh/tools/cmd/godoc` so the compiled `godoc` binary
 picks up the change.
 
 4) Run `godoc -http=:6060` and view your changes in the browser. You may need

@@ -11,7 +11,7 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/go/packages"
+	"github.com/Go-zh/tools/go/packages"
 )
 
 func TestLoadImportsC(t *testing.T) {

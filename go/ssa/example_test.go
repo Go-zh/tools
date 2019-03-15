@@ -14,9 +14,9 @@ import (
 	"log"
 	"os"
 
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/go/ssa"
-	"golang.org/x/tools/go/ssa/ssautil"
+	"github.com/Go-zh/tools/go/packages"
+	"github.com/Go-zh/tools/go/ssa"
+	"github.com/Go-zh/tools/go/ssa/ssautil"
 )
 
 const hello = `
@@ -34,7 +34,7 @@ func main() {
 // This program demonstrates how to run the SSA builder on a single
 // package of one or more already-parsed files.  Its dependencies are
 // loaded from compiler export data.  This is what you'd typically use
-// for a compiler; it does not depend on golang.org/x/tools/go/loader.
+// for a compiler; it does not depend on github.com/Go-zh/tools/go/loader.
 //
 // It shows the printed representation of packages, functions, and
 // instructions.  Within the function listing, the name of each

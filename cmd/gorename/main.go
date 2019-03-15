@@ -5,7 +5,7 @@
 // package golang.org/x/tools/refactor/rename, which contains most of
 // the implementation.
 //
-package main // import "golang.org/x/tools/cmd/gorename"
+package main // import "github.com/Go-zh/tools/cmd/gorename"
 
 import (
 	"flag"
@@ -14,8 +14,8 @@ import (
 	"log"
 	"os"
 
-	"golang.org/x/tools/go/buildutil"
-	"golang.org/x/tools/refactor/rename"
+	"github.com/Go-zh/tools/go/buildutil"
+	"github.com/Go-zh/tools/refactor/rename"
 )
 
 var (

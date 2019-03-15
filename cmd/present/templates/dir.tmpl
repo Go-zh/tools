@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Talks - The Go Programming Language</title>
+  <title>演讲 - Go 编程语言</title>
   <link type="text/css" rel="stylesheet" href="/static/dir.css">
   <script src="/static/dir.js"></script>
   <script>
@@ -29,26 +29,26 @@
 
 <form method="GET" action="//golang.org/search">
 <div id="menu">
-<a href="http://golang.org/doc/">Documents</a>
-<a href="http://golang.org/ref">References</a>
-<a href="http://golang.org/pkg/">Packages</a>
-<a href="http://golang.org/project/">The Project</a>
-<a href="http://golang.org/help/">Help</a>
-<input type="text" id="search" name="q" class="inactive" value="Search">
+<a href="https://go-zh.org/doc/">文档</a>
+<a href="https://go-zh.org/ref/">参考</a>
+<a href="https://go-zh.org/pkg/">包</a>
+<a href="https://go-zh.org/project/">项目</a>
+<a href="https://go-zh.org/help/">帮助</a>
+<input type="text" id="search" name="q" class="inactive" value="搜索">
 </div>
-<div id="heading"><a href="/">The Go Programming Language</a></div>
+<div id="heading"><a href="/">Go 编程语言</a></div>
 </form>
 
 </div></div>
 
 <div id="page">
 
-  <h1>Go talks</h1>
+  <h1>Go 演讲</h1>
 
   {{with .Path}}<h2>{{.}}</h2>{{end}}
 
   {{with .Articles}}
-  <h4>Articles:</h4>
+  <h4>文章：</h4>
   <dl>
   {{range .}}
   <dd><a href="/{{.Path}}">{{.Name}}</a>: {{.Title}}</dd>
@@ -57,7 +57,7 @@
   {{end}}
 
   {{with .Slides}}
-  <h4>Slide decks:</h4>
+  <h4>幻灯片：</h4>
   <dl>
   {{range .}}
   <dd><a href="/{{.Path}}">{{.Name}}</a>: {{.Title}}</dd>
@@ -66,7 +66,7 @@
   {{end}}
 
   {{with .Other}}
-  <h4>Files:</h4>
+  <h4>文件：</h4>
   <dl>
   {{range .}}
   <dd><a href="/{{.Path}}">{{.Name}}</a></dd>
@@ -75,7 +75,7 @@
   {{end}}
 
   {{with .Dirs}}
-  <h4>Sub-directories:</h4>
+  <h4>子目录：</h4>
   <dl>
   {{range .}}
   <dd><a href="/{{.Path}}">{{.Name}}</a></dd>
@@ -86,12 +86,11 @@
 </div>
 
 <div id="footer">
-Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
-the content of this page is licensed under the
-Creative Commons Attribution 3.0 License,
-and code is licensed under a <a href="http://golang.org/LICENSE">BSD license</a>.<br>
-<a href="http://golang.org/doc/tos.html">Terms of Service</a> |
-<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+构建版本：{{html .Version}}<br>
+除<a href="https://developers.google.com/site-policies#restrictions">特别注明</a>外，
+本页内容均采用知识共享-署名（CC-BY）3.0协议授权，代码采用<a href="/LICENSE">BSD协议</a>授权。<br>
+<a href="/doc/tos.html">服务条款</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">隐私政策</a>
 </div>
 
 <script>

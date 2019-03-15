@@ -22,8 +22,8 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/go/expect"
-	"golang.org/x/tools/go/packages"
+	"github.com/Go-zh/tools/go/expect"
+	"github.com/Go-zh/tools/go/packages"
 )
 
 var (

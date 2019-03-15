@@ -6,14 +6,14 @@
 // The Language Server Protocol allows any text editor
 // to be extended with IDE-like features;
 // see https://langserver.org/ for details.
-package main // import "golang.org/x/tools/cmd/gopls"
+package main // import "github.com/Go-zh/tools/cmd/gopls"
 
 import (
 	"context"
 	"os"
 
-	"golang.org/x/tools/internal/lsp/cmd"
-	"golang.org/x/tools/internal/tool"
+	"github.com/Go-zh/tools/internal/lsp/cmd"
+	"github.com/Go-zh/tools/internal/tool"
 )
 
 func main() {

@@ -9,7 +9,7 @@ import (
 	"go/types"
 	"strings"
 
-	"golang.org/x/tools/go/ast/astutil"
+	"github.com/Go-zh/tools/go/ast/astutil"
 )
 
 type CompletionItem struct {

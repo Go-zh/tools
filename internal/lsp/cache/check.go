@@ -14,9 +14,9 @@ import (
 	"strings"
 	"sync"
 
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/internal/span"
+	"github.com/Go-zh/tools/go/analysis"
+	"github.com/Go-zh/tools/go/packages"
+	"github.com/Go-zh/tools/internal/span"
 )
 
 func (v *View) parse(ctx context.Context, uri span.URI) error {

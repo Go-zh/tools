@@ -25,23 +25,23 @@
 			<dd><code>import "{{html .ImportPath}}"</code></dd>
 			</dl>
 			<dl>
-			<dd><a href="#pkg-overview" class="overviewLink">Overview</a></dd>
-			<dd><a href="#pkg-index" class="indexLink">Index</a></dd>
+			<dd><a href="#pkg-overview" class="overviewLink">概览</a></dd>
+			<dd><a href="#pkg-index" class="indexLink">索引</a></dd>
 			{{if $.Examples}}
-				<dd><a href="#pkg-examples" class="examplesLink">Examples</a></dd>
+				<dd><a href="#pkg-examples" class="examplesLink">示例</a></dd>
 			{{end}}
 			{{if $.Dirs}}
-				<dd><a href="#pkg-subdirectories">Subdirectories</a></dd>
+				<dd><a href="#pkg-subdirectories">子目录</a></dd>
 			{{end}}
 			</dl>
 		</div>
 		<!-- The package's Name is printed as title by the top-level template -->
 		<div id="pkg-overview" class="toggleVisible">
 			<div class="collapsed">
-				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+				<h2 class="toggleButton" title="点此显示概览">概览 ▹</h2>
 			</div>
 			<div class="expanded">
-				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				<h2 class="toggleButton" title="点此隐藏概览">概览 ▾</h2>
 				{{comment_html .Doc}}
 				{{example_html $ ""}}
 			</div>
@@ -49,19 +49,19 @@
 
 		<div id="pkg-index" class="toggleVisible">
 		<div class="collapsed">
-			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+			<h2 class="toggleButton" title="点此显示素引">索引 ▹</h2>
 		</div>
 		<div class="expanded">
-			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+			<h2 class="toggleButton" title="点此隐藏索引">索引 ▾</h2>
 
 		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
 			<div id="manual-nav">
 			<dl>
 			{{if .Consts}}
-				<dd><a href="#pkg-constants">Constants</a></dd>
+				<dd><a href="#pkg-constants">常量</a></dd>
 			{{end}}
 			{{if .Vars}}
-				<dd><a href="#pkg-variables">Variables</a></dd>
+				<dd><a href="#pkg-variables">变量</a></dd>
 			{{end}}
 			{{range .Funcs}}
 				{{$name_html := html .Name}}
@@ -89,8 +89,8 @@
 
 		{{if $.Examples}}
 		<div id="pkg-examples">
-			<h3>Examples</h3>
-			<div class="js-expandAll expandAll collapsed">(Expand All)</div>
+			<h3>示例</h3>
+			<div class="js-expandAll expandAll collapsed">（展开所有）</div>
 			<dl>
 			{{range $.Examples}}
 			<dd><a class="exampleLink" href="#example_{{.Name}}">{{example_name .Name}}</a></dd>
@@ -100,7 +100,7 @@
 		{{end}}
 
 		{{with .Filenames}}
-			<h3>Package files</h3>
+			<h3>包文件</h3>
 			<p>
 			<span style="font-size:90%">
 			{{range .}}
@@ -115,35 +115,23 @@
 		{{if ne $.CallGraph "null"}}
 		<div id="pkg-callgraph" class="toggle" style="display: none">
 		<div class="collapsed">
-			<h2 class="toggleButton" title="Click to show Internal Call Graph section">Internal call graph ▹</h2>
+			<h2 class="toggleButton" title="点此显示内部调用图">内部调用图 ▹</h2>
 		</div> <!-- .expanded -->
 		<div class="expanded">
-			<h2 class="toggleButton" title="Click to hide Internal Call Graph section">Internal call graph ▾</h2>
+			<h2 class="toggleButton" title="点此隐藏内部调用图">内部调用图 ▾</h2>
 			<p>
-			  In the call graph viewer below, each node
-			  is a function belonging to this package
-			  and its children are the functions it
-			  calls&mdash;perhaps dynamically.
+			  在下面的调用图查看器中，每个节点都是一个属于本包的函数，其子节点即为它所调用的函数——或许会动态地显示。
 			</p>
 			<p>
-			  The root nodes are the entry points of the
-			  package: functions that may be called from
-			  outside the package.
-			  There may be non-exported or anonymous
-			  functions among them if they are called
-			  dynamically from another package.
+			  根节点为包的入口点：函数可从包的外部调用。若这些函数被其它包动态地调用，
+			  那么它们可能是未导出的或匿名的。
 			</p>
 			<p>
-			  Click a node to visit that function's source code.
-			  From there you can visit its callers by
-			  clicking its declaring <code>func</code>
-			  token.
+			  点击一个节点来查看该函数的源码。在源码中，可以点击它的 <code>func</code>
+			  声明标记来查看其调用者。
 			</p>
 			<p>
-			  Functions may be omitted if they were
-			  determined to be unreachable in the
-			  particular programs or tests that were
-			  analyzed.
+			  在分析特定程序或测试时，被认定为无法访问的函数会被忽略。
 			</p>
 			<!-- Zero means show all package entry points. -->
 			<ul style="margin-left: 0.5in" id="callgraph-0" class="treeview"></ul>
@@ -152,14 +140,14 @@
 		{{end}}
 
 		{{with .Consts}}
-			<h2 id="pkg-constants">Constants</h2>
+			<h2 id="pkg-constants">常量</h2>
 			{{range .}}
 				{{comment_html .Doc}}
 				<pre>{{node_html $ .Decl true}}</pre>
 			{{end}}
 		{{end}}
 		{{with .Vars}}
-			<h2 id="pkg-variables">Variables</h2>
+			<h2 id="pkg-variables">变量</h2>
 			{{range .}}
 				{{comment_html .Doc}}
 				<pre>{{node_html $ .Decl true}}</pre>
@@ -254,13 +242,13 @@
 {{with .Dirs}}
 	{{/* DirList entries are numbers and strings - no need for FSet */}}
 	{{if $.PDoc}}
-		<h2 id="pkg-subdirectories">Subdirectories</h2>
+		<h2 id="pkg-subdirectories">子目录</h2>
 	{{end}}
 	<div class="pkg-dir">
 		<table>
 			<tr>
-				<th class="pkg-name">Name</th>
-				<th class="pkg-synopsis">Synopsis</th>
+				<th class="pkg-name">包名</th>
+				<th class="pkg-synopsis">概述</th>
 			</tr>
 
 			{{if not ((eq $.Dirname "/src/cmd") $.DirFlat)}}

@@ -7,8 +7,8 @@ package pkgfact_test
 import (
 	"testing"
 
-	"golang.org/x/tools/go/analysis/analysistest"
-	"golang.org/x/tools/go/analysis/passes/pkgfact"
+	"github.com/Go-zh/tools/go/analysis/analysistest"
+	"github.com/Go-zh/tools/go/analysis/passes/pkgfact"
 )
 
 func Test(t *testing.T) {

@@ -18,7 +18,7 @@ import (
 	"sync"
 	"time"
 
-	"golang.org/x/tools/go/analysis"
+	"github.com/Go-zh/tools/go/analysis"
 )
 
 func analyze(ctx context.Context, v View, pkgs []Package, analyzers []*analysis.Analyzer) []*Action {

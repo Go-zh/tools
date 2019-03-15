@@ -68,7 +68,7 @@
   {{end}}{{/* of Slide block */}}
 
       <article>
-        <h3>Thank you</h3>
+        <h3>谢谢观看</h3>
         {{range .Authors}}
           <div class="presenter">
             {{range .Elem}}{{elem $.Template .}}{{end}}
@@ -79,9 +79,8 @@
     </section>
 
     <div id="help">
-      Use the left and right arrow keys or click the left and right
-      edges of the page to navigate between slides.<br>
-      (Press 'H' or navigate to hide this message.)
+      请使用左右键或点击页面的左右边缘来翻页。<br>
+      （按下 H 或翻页隐藏此信息。）
     </div>
 
     {{if .PlayEnabled}}

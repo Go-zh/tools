@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-package ssautil // import "golang.org/x/tools/go/ssa/ssautil"
+package ssautil // import "github.com/Go-zh/tools/go/ssa/ssautil"
 
-import "golang.org/x/tools/go/ssa"
+import "github.com/Go-zh/tools/go/ssa"
 
 // This file defines utilities for visiting the SSA representation of
 // a Program.

@@ -6,7 +6,7 @@
 {{$query_url := urlquery .Query}}
 {{if not .Idents}}
 	{{with .Pak}}
-		<h2 id="Packages">Package {{html $.Query}}</h2>
+		<h2 id="Packages">包 {{html $.Query}}</h2>
 		<p>
 		<table class="layout">
 		{{range .}}
@@ -19,7 +19,7 @@
 {{end}}
 {{with .Hit}}
 	{{with .Decls}}
-		<h2 id="Global">Package-level declarations</h2>
+		<h2 id="Global">包级声明</h2>
 		{{range .}}
 			{{$pkg_html := pkgLink .Pak.Path | html}}
 			<h3 id="Global_{{$pkg_html}}">package <a href="/{{$pkg_html}}">{{html .Pak.Name}}</a></h3>
@@ -36,7 +36,7 @@
 		{{end}}
 	{{end}}
 	{{with .Others}}
-		<h2 id="Local">Local declarations and uses</h2>
+		<h2 id="Local">局部声明和使用</h2>
 		{{range .}}
 			{{$pkg_html := pkgLink .Pak.Path | html}}
 			<h3 id="Local_{{$pkg_html}}">package <a href="/{{$pkg_html}}">{{html .Pak.Name}}</a></h3>

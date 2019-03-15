@@ -15,13 +15,13 @@ import (
 	"strings"
 	"sync"
 
-	"golang.org/x/tools/blog"
-	"golang.org/x/tools/godoc/redirect"
+	"github.com/Go-zh/tools/blog"
+	"github.com/Go-zh/tools/godoc/redirect"
 )
 
 const (
-	blogRepo = "golang.org/x/blog"
-	blogURL  = "https://blog.golang.org/"
+	blogRepo = "github.com/Go-zh/blog"
+	blogURL  = "https://blog.go-zh.org/"
 	blogPath = "/blog/"
 )
 
@@ -46,15 +46,15 @@ func blogInit(host string) {
 	// We stopped including this in Go 1.11.
 	root := filepath.Join(runtime.GOROOT(), "blog")
 
-	// Prefer content from the golang.org/x/blog repository if present.
+	// Prefer content from the github.com/Go-zh/blog repository if present.
 	if pkg, err := build.Import(blogRepo, "", build.FindOnly); err == nil {
 		root = pkg.Dir
 	}
 
 	// If content is not available fall back to redirect.
 	if fi, err := os.Stat(root); err != nil || !fi.IsDir() {
-		fmt.Fprintf(os.Stderr, "Blog content not available locally. "+
-			"To install, run \n\tgo get %v\n", blogRepo)
+		fmt.Fprintf(os.Stderr, "博客内容在本地不可用。"+
+			"要安装博客，请执行 \n\tgo get %v\n", blogRepo)
 		blogServer = http.HandlerFunc(blogRedirectHandler)
 		return
 	}

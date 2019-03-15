@@ -3,7 +3,7 @@
 package bar
 
 import (
-	"golang.org/x/tools/internal/lsp/foo" //@item(foo, "foo", "\"golang.org/x/tools/internal/lsp/foo\"", "package")
+	"github.com/Go-zh/tools/internal/lsp/foo" //@item(foo, "foo", "\import "github.com/Go-zh/tools/internal/lsp/foo\"", "package")
 )
 
 func helper(i foo.IntFoo) {} //@item(helper, "helper(i foo.IntFoo)", "", "func")

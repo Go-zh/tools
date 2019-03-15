@@ -9,9 +9,9 @@ import (
 	"go/token"
 	"sync"
 
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/internal/lsp/source"
-	"golang.org/x/tools/internal/span"
+	"github.com/Go-zh/tools/go/packages"
+	"github.com/Go-zh/tools/internal/lsp/source"
+	"github.com/Go-zh/tools/internal/span"
 )
 
 type View struct {

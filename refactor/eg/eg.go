@@ -4,7 +4,7 @@
 
 // Package eg implements the example-based refactoring tool whose
 // command-line is defined in golang.org/x/tools/cmd/eg.
-package eg // import "golang.org/x/tools/refactor/eg"
+package eg // import "github.com/Go-zh/tools/refactor/eg"
 
 import (
 	"bytes"

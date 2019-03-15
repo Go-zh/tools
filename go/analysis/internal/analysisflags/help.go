@@ -7,7 +7,7 @@ import (
 	"sort"
 	"strings"
 
-	"golang.org/x/tools/go/analysis"
+	"github.com/Go-zh/tools/go/analysis"
 )
 
 const help = `PROGNAME is a tool for static analysis of Go programs.

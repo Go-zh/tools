@@ -12,9 +12,9 @@ import (
 	"sort"
 	"testing"
 
-	"golang.org/x/tools/go/loader"
-	"golang.org/x/tools/go/ssa"
-	"golang.org/x/tools/go/ssa/ssautil"
+	"github.com/Go-zh/tools/go/loader"
+	"github.com/Go-zh/tools/go/ssa"
+	"github.com/Go-zh/tools/go/ssa/ssautil"
 )
 
 func create(t *testing.T, content string) *ssa.Package {

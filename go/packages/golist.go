@@ -21,9 +21,9 @@ import (
 	"sync"
 	"time"
 
-	"golang.org/x/tools/go/internal/packagesdriver"
-	"golang.org/x/tools/internal/gopathwalk"
-	"golang.org/x/tools/internal/semver"
+	"github.com/Go-zh/tools/go/internal/packagesdriver"
+	"github.com/Go-zh/tools/internal/gopathwalk"
+	"github.com/Go-zh/tools/internal/semver"
 )
 
 // debug controls verbose logging.

@@ -3,8 +3,8 @@
 // license that can be found in the LICENSE file.
 
 // The vet command is a static checker for Go programs. It has pluggable
-// analyzers defined using the golang.org/x/tools/go/analysis API, and
-// using the golang.org/x/tools/go/packages API to load packages in any
+// analyzers defined using the github.com/Go-zh/tools/go/analysis API, and
+// using the github.com/Go-zh/tools/go/packages API to load packages in any
 // build system.
 //
 // Each analyzer flag name is preceded by the analyzer name: -NAME.flag.
@@ -14,32 +14,32 @@
 package main
 
 import (
-	"golang.org/x/tools/go/analysis/multichecker"
+	"github.com/Go-zh/tools/go/analysis/multichecker"
 
 	// analysis plug-ins
-	"golang.org/x/tools/go/analysis/passes/asmdecl"
-	"golang.org/x/tools/go/analysis/passes/assign"
-	"golang.org/x/tools/go/analysis/passes/atomic"
-	"golang.org/x/tools/go/analysis/passes/atomicalign"
-	"golang.org/x/tools/go/analysis/passes/bools"
-	"golang.org/x/tools/go/analysis/passes/buildtag"
-	"golang.org/x/tools/go/analysis/passes/cgocall"
-	"golang.org/x/tools/go/analysis/passes/composite"
-	"golang.org/x/tools/go/analysis/passes/copylock"
-	"golang.org/x/tools/go/analysis/passes/httpresponse"
-	"golang.org/x/tools/go/analysis/passes/loopclosure"
-	"golang.org/x/tools/go/analysis/passes/lostcancel"
-	"golang.org/x/tools/go/analysis/passes/nilfunc"
-	"golang.org/x/tools/go/analysis/passes/nilness"
-	"golang.org/x/tools/go/analysis/passes/printf"
-	"golang.org/x/tools/go/analysis/passes/shift"
-	"golang.org/x/tools/go/analysis/passes/stdmethods"
-	"golang.org/x/tools/go/analysis/passes/structtag"
-	"golang.org/x/tools/go/analysis/passes/tests"
-	"golang.org/x/tools/go/analysis/passes/unmarshal"
-	"golang.org/x/tools/go/analysis/passes/unreachable"
-	"golang.org/x/tools/go/analysis/passes/unsafeptr"
-	"golang.org/x/tools/go/analysis/passes/unusedresult"
+	"github.com/Go-zh/tools/go/analysis/passes/asmdecl"
+	"github.com/Go-zh/tools/go/analysis/passes/assign"
+	"github.com/Go-zh/tools/go/analysis/passes/atomic"
+	"github.com/Go-zh/tools/go/analysis/passes/atomicalign"
+	"github.com/Go-zh/tools/go/analysis/passes/bools"
+	"github.com/Go-zh/tools/go/analysis/passes/buildtag"
+	"github.com/Go-zh/tools/go/analysis/passes/cgocall"
+	"github.com/Go-zh/tools/go/analysis/passes/composite"
+	"github.com/Go-zh/tools/go/analysis/passes/copylock"
+	"github.com/Go-zh/tools/go/analysis/passes/httpresponse"
+	"github.com/Go-zh/tools/go/analysis/passes/loopclosure"
+	"github.com/Go-zh/tools/go/analysis/passes/lostcancel"
+	"github.com/Go-zh/tools/go/analysis/passes/nilfunc"
+	"github.com/Go-zh/tools/go/analysis/passes/nilness"
+	"github.com/Go-zh/tools/go/analysis/passes/printf"
+	"github.com/Go-zh/tools/go/analysis/passes/shift"
+	"github.com/Go-zh/tools/go/analysis/passes/stdmethods"
+	"github.com/Go-zh/tools/go/analysis/passes/structtag"
+	"github.com/Go-zh/tools/go/analysis/passes/tests"
+	"github.com/Go-zh/tools/go/analysis/passes/unmarshal"
+	"github.com/Go-zh/tools/go/analysis/passes/unreachable"
+	"github.com/Go-zh/tools/go/analysis/passes/unsafeptr"
+	"github.com/Go-zh/tools/go/analysis/passes/unusedresult"
 )
 
 func main() {

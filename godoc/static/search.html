@@ -16,14 +16,14 @@
 
 {{if not .Idents}}
 	{{with .Pak}}
-		<a href="#Packages">Package {{html $.Query}}</a>
+		<a href="#Packages">包 {{html $.Query}}</a>
 		<br />
 	{{end}}
 {{end}}
 
 {{with .Hit}}
 	{{with .Decls}}
-		<a href="#Global">Package-level declarations</a>
+		<a href="#Global">包级声明</a>
 		<br />
 		{{range .}}
 			{{$pkg_html := pkgLink .Pak.Path | html}}
@@ -32,7 +32,7 @@
 		{{end}}
 	{{end}}
 	{{with .Others}}
-		<a href="#Local">Local declarations and uses</a>
+		<a href="#Local">局部声明和使用</a>
 		<br />
 		{{range .}}
 			{{$pkg_html := pkgLink .Pak.Path | html}}
@@ -44,9 +44,9 @@
 
 {{with .Textual}}
 	{{if $.Complete}}
-		<a href="#Textual">{{html $.Found}} textual occurrences</a>
+		<a href="#Textual">文本出现了 {{html $.Found}} 次</a>
 	{{else}}
-		<a href="#Textual">More than {{html $.Found}} textual occurrences</a>
+		<a href="#Textual">文本出现超过 {{html $.Found}} 次</a>
 	{{end}}
 {{end}}
 </nav>
@@ -58,7 +58,7 @@
 {{end}}
 {{with .Alt}}
 	<p>
-	<span class="alert" style="font-size:120%">Did you mean: </span>
+	<span class="alert" style="font-size:120%">你是否在找：</span>
 	{{range .Alts}}
 		<a href="search?q={{urlquery .}}" style="font-size:120%">{{html .}}</a>
 	{{end}}

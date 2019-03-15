@@ -7,7 +7,7 @@ package span_test
 import (
 	"testing"
 
-	"golang.org/x/tools/internal/span"
+	"github.com/Go-zh/tools/internal/span"
 )
 
 // TestUTF16 tests the conversion of column information between the native

@@ -21,8 +21,8 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/go/packages/packagestest"
+	"github.com/Go-zh/tools/go/packages"
+	"github.com/Go-zh/tools/go/packages/packagestest"
 )
 
 // TODO(matloob): remove this once Go 1.12 is released as we will end support

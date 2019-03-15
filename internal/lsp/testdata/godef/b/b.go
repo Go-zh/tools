@@ -1,6 +1,6 @@
 package b
 
-import "golang.org/x/tools/internal/lsp/godef/a"
+import "github.com/Go-zh/tools/internal/lsp/godef/a"
 
 type S1 struct { //@S1
 	F1  int //@mark(S1F1, "F1")

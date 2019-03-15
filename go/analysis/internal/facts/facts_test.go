@@ -12,9 +12,9 @@ import (
 	"os"
 	"testing"
 
-	"golang.org/x/tools/go/analysis/analysistest"
-	"golang.org/x/tools/go/analysis/internal/facts"
-	"golang.org/x/tools/go/packages"
+	"github.com/Go-zh/tools/go/analysis/analysistest"
+	"github.com/Go-zh/tools/go/analysis/internal/facts"
+	"github.com/Go-zh/tools/go/packages"
 )
 
 type myFact struct {

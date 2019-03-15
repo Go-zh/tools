@@ -15,7 +15,7 @@ import (
 	"path/filepath"
 	"regexp"
 
-	"golang.org/x/tools/go/packages"
+	"github.com/Go-zh/tools/go/packages"
 )
 
 // Modules is the exporter that produces module layouts.

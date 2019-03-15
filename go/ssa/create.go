@@ -15,7 +15,7 @@ import (
 	"os"
 	"sync"
 
-	"golang.org/x/tools/go/types/typeutil"
+	"github.com/Go-zh/tools/go/types/typeutil"
 )
 
 // NewProgram returns a new SSA Program.

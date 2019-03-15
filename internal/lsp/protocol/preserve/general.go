@@ -7,7 +7,7 @@
 
 package protocol
 
-import "golang.org/x/tools/internal/jsonrpc2"
+import "github.com/Go-zh/tools/internal/jsonrpc2"
 
 type CancelParams struct {
 	/**

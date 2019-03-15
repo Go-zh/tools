@@ -15,7 +15,7 @@ import (
 	"strings"
 	"unicode"
 
-	"golang.org/x/tools/go/ast/astutil"
+	"github.com/Go-zh/tools/go/ast/astutil"
 )
 
 func objectKind(obj types.Object) string {

@@ -13,11 +13,11 @@ import (
 	"go/types"
 	"os"
 
-	guru "golang.org/x/tools/cmd/guru/serial"
-	"golang.org/x/tools/internal/lsp/cache"
-	"golang.org/x/tools/internal/lsp/source"
-	"golang.org/x/tools/internal/span"
-	"golang.org/x/tools/internal/tool"
+	guru "github.com/Go-zh/tools/cmd/guru/serial"
+	"github.com/Go-zh/tools/internal/lsp/cache"
+	"github.com/Go-zh/tools/internal/lsp/source"
+	"github.com/Go-zh/tools/internal/span"
+	"github.com/Go-zh/tools/internal/tool"
 )
 
 // A Definition is the result of a 'definition' query.

@@ -4,8 +4,8 @@ import (
 	"go/ast"
 	"go/types"
 
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/go/analysis/passes/internal/analysisutil"
+	"github.com/Go-zh/tools/go/analysis"
+	"github.com/Go-zh/tools/go/analysis/passes/internal/analysisutil"
 )
 
 var errorType = types.Universe.Lookup("error").Type().Underlying().(*types.Interface)

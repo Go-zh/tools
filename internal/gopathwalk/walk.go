@@ -17,7 +17,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"golang.org/x/tools/internal/fastwalk"
+	"github.com/Go-zh/tools/internal/fastwalk"
 )
 
 // Options controls the behavior of a Walk call.

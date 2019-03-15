@@ -22,7 +22,7 @@ import (
 	"strings"
 	"sync"
 
-	"golang.org/x/tools/go/gcexportdata"
+	"github.com/Go-zh/tools/go/gcexportdata"
 )
 
 // A LoadMode specifies the amount of detail to return when loading.

@@ -17,8 +17,8 @@ import (
 	"math/big"
 	"sort"
 
-	"golang.org/x/tools/go/callgraph"
-	"golang.org/x/tools/go/ssa"
+	"github.com/Go-zh/tools/go/callgraph"
+	"github.com/Go-zh/tools/go/ssa"
 )
 
 // doCallgraph computes the CALLEES and CALLERS relations.

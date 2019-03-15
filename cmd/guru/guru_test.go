@@ -47,7 +47,7 @@ import (
 	"sync"
 	"testing"
 
-	guru "golang.org/x/tools/cmd/guru"
+	guru "github.com/Go-zh/tools/cmd/guru"
 )
 
 func init() {

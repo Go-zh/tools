@@ -6,11 +6,11 @@
 {{$query_url := urlquery .Query}}
 {{with .Textual}}
 	{{if $.Complete}}
-		<h2 id="Textual">{{html $.Found}} textual occurrences</h2>
+		<h2 id="Textual">文本出现了 {{html $.Found}} 次</h2>
 	{{else}}
-		<h2 id="Textual">More than {{html $.Found}} textual occurrences</h2>
+		<h2 id="Textual">文本出现超过 {{html $.Found}} 次</h2>
 		<p>
-		<span class="alert" style="font-size:120%">Not all files or lines containing "{{html $.Query}}" are shown.</span>
+		<span class="alert" style="font-size:120%">并未显示所有包含“{{html $.Query}}”的文件和行。</span>
 		</p>
 	{{end}}
 	<p>

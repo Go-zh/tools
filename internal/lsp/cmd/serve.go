@@ -17,9 +17,9 @@ import (
 	"strings"
 	"time"
 
-	"golang.org/x/tools/internal/jsonrpc2"
-	"golang.org/x/tools/internal/lsp"
-	"golang.org/x/tools/internal/tool"
+	"github.com/Go-zh/tools/internal/jsonrpc2"
+	"github.com/Go-zh/tools/internal/lsp"
+	"github.com/Go-zh/tools/internal/tool"
 )
 
 // Serve is a struct that exposes the configurable parts of the LSP server as

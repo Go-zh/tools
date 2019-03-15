@@ -10,8 +10,8 @@ import (
 	"sort"
 	"strings"
 
-	"golang.org/x/tools/internal/lsp/protocol"
-	"golang.org/x/tools/internal/lsp/source"
+	"github.com/Go-zh/tools/internal/lsp/protocol"
+	"github.com/Go-zh/tools/internal/lsp/source"
 )
 
 func toProtocolCompletionItems(candidates []source.CompletionItem, prefix string, pos protocol.Position, snippetsSupported, signatureHelpEnabled bool) []protocol.CompletionItem {

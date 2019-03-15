@@ -10,9 +10,9 @@ import (
 	"go/token"
 	"go/types"
 
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/internal/span"
+	"github.com/Go-zh/tools/go/analysis"
+	"github.com/Go-zh/tools/go/packages"
+	"github.com/Go-zh/tools/internal/span"
 )
 
 // View abstracts the underlying architecture of the package using the source

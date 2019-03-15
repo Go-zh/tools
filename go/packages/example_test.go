@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"golang.org/x/tools/go/packages"
+	"github.com/Go-zh/tools/go/packages"
 )
 
 // Example demonstrates how to load the packages specified on the

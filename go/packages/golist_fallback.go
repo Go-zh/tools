@@ -15,7 +15,7 @@ import (
 	"sort"
 	"strings"
 
-	"golang.org/x/tools/go/internal/cgo"
+	"github.com/Go-zh/tools/go/internal/cgo"
 )
 
 // TODO(matloob): Delete this file once Go 1.12 is released.

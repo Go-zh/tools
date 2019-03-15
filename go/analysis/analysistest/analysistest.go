@@ -15,9 +15,9 @@ import (
 	"strings"
 	"text/scanner"
 
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/go/analysis/internal/checker"
-	"golang.org/x/tools/go/packages"
+	"github.com/Go-zh/tools/go/analysis"
+	"github.com/Go-zh/tools/go/analysis/internal/checker"
+	"github.com/Go-zh/tools/go/packages"
 )
 
 // WriteFiles is a helper function that creates a temporary directory
@@ -63,7 +63,7 @@ type Testing interface {
 // Run applies an analysis to the packages denoted by the "go list" patterns.
 //
 // It loads the packages from the specified GOPATH-style project
-// directory using golang.org/x/tools/go/packages, runs the analysis on
+// directory using github.com/Go-zh/tools/go/packages, runs the analysis on
 // them, and checks that each analysis emits the expected diagnostics
 // and facts specified by the contents of '// want ...' comments in the
 // package's source files.

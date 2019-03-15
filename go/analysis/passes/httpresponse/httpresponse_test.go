@@ -7,8 +7,8 @@ package httpresponse_test
 import (
 	"testing"
 
-	"golang.org/x/tools/go/analysis/analysistest"
-	"golang.org/x/tools/go/analysis/passes/httpresponse"
+	"github.com/Go-zh/tools/go/analysis/analysistest"
+	"github.com/Go-zh/tools/go/analysis/passes/httpresponse"
 )
 
 func Test(t *testing.T) {

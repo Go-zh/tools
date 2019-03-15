@@ -11,8 +11,8 @@ import (
 	"go/token"
 	"go/types"
 
-	"golang.org/x/tools/go/ast/astutil"
-	"golang.org/x/tools/internal/span"
+	"github.com/Go-zh/tools/go/ast/astutil"
+	"github.com/Go-zh/tools/internal/span"
 )
 
 // IdentifierInfo holds information about an identifier in Go source.

@@ -10,10 +10,10 @@ import (
 	"go/ast"
 	"go/types"
 
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/go/analysis/passes/inspect"
-	"golang.org/x/tools/go/ast/inspector"
-	"golang.org/x/tools/go/types/typeutil"
+	"github.com/Go-zh/tools/go/analysis"
+	"github.com/Go-zh/tools/go/analysis/passes/inspect"
+	"github.com/Go-zh/tools/go/ast/inspector"
+	"github.com/Go-zh/tools/go/types/typeutil"
 )
 
 const doc = `report passing non-pointer or non-interface values to unmarshal

@@ -40,4 +40,4 @@ File bugs or feature requests at:
 Happy hacking!
 
 */
-package main // import "golang.org/x/tools/cmd/goimports"
+package main // import "github.com/Go-zh/tools/cmd/goimports"

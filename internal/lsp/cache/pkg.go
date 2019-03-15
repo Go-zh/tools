@@ -7,9 +7,9 @@ import (
 	"sort"
 	"sync"
 
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/internal/lsp/source"
+	"github.com/Go-zh/tools/go/analysis"
+	"github.com/Go-zh/tools/go/packages"
+	"github.com/Go-zh/tools/internal/lsp/source"
 )
 
 // Package contains the type information needed by the source package.
