@@ -15,7 +15,7 @@ import (
 	"time"
 
 	"github.com/Go-zh/tools/godoc/static"
-	"golang.org/x/playground/socket"
+	"github.com/Go-zh/tools/playground/socket"
 	"github.com/Go-zh/tools/present"
 
 	// This will register handlers at /compile and /share that will proxy to the

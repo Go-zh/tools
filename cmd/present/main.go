@@ -18,7 +18,7 @@ import (
 	"github.com/Go-zh/tools/present"
 )
 
-const basePkg = import "github.com/Go-zh/tools/cmd/present"
+const basePkg = "github.com/Go-zh/tools/cmd/present"
 
 var (
 	httpAddr      = flag.String("http", "127.0.0.1:3999", "HTTP service address (e.g., '127.0.0.1:3999')")

@@ -14,6 +14,7 @@ import (
 	"os/exec"
 	"path/filepath"
 	"regexp"
+	"runtime"
 	"strconv"
 	"strings"
 	"testing"
@@ -27,6 +28,9 @@ import (
 var verifyGuru = flag.Bool("verify-guru", false, "Check that the guru compatability matches")
 
 func TestDefinitionHelpExample(t *testing.T) {
+	if runtime.GOOS == "android" {
+		t.Skip("not all source files are available on android")
+	}
 	dir, err := os.Getwd()
 	if err != nil {
 		t.Errorf("could not get wd: %v", err)
@@ -59,13 +63,7 @@ func TestDefinition(t *testing.T) {
 			}
 			args = append(args, "definition")
 			f := fset.File(src)
-			spn := span.Span{
-				URI: span.FileURI(f.Name()),
-				Start: span.Point{
-					Offset: f.Offset(src),
-				},
-			}
-			spn.End = spn.Start
+			spn := span.New(span.FileURI(f.Name()), span.NewPoint(0, 0, f.Offset(src)), span.Point{})
 			args = append(args, fmt.Sprint(spn))
 			app := &cmd.Application{}
 			app.Config = *exported.Config
