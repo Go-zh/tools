@@ -870,3 +870,18 @@ a.error {
 		white-space: pre-wrap;
 	}
 }
+/* Hide English translations. */
+div.english {
+	display: none;
+}
+
+.en_visible {
+	display: block;
+}
+
+/* Translator notes. */
+p.tnote {
+	background: #00f9e9;
+	padding: 10px;
+	border-radius: 5px;
+}
